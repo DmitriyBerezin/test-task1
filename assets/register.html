@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ForexClub 15 лет - регистрация</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/style.css">
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+		<!--[if lt IE 7]>
+		<p class="browsehappy">
+			Вы используете очень старую версию браузера. Некоторые возможности сайта могут работать некоррекно. Пожалуйста, 
+			<a href="http://browsehappy.com/">обновите браузер</a> 
+			для работы с сайтом.
+		</p>
+		<![endif]-->
+
+		<header>
+			<div class="placeholder">
+				<div class="contacts-block">
+					<div class="phone-bg-icon">
+						<div class="phone-icon"></div>
+					</div>
+					<div class="contacts-list">
+						<span class="phone">
+							8-800-2002-600 
+							<i>(звонок бесплатный)</i>
+						</span>
+						<span class="phone">
+							+7 (495) 727-06-06
+						</span>
+						<span class="phone">
+							+7 (495) 626-19-19
+						</span>
+					</div>
+				</div>
+			</div>
+
+			<nav class="navbar navbar-default">
+				<div class="placeholder">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+
+							<a class="navbar-brand" href="#">
+								<img alt="ForexClub" src="images/logo.png">
+							</a>
+						</div>
+						<div class="collapse navbar-collapse" role="navigation" id="navbar-collapse" aria-expanded="false">
+							<ul class="nav navbar-nav">
+								<li>
+									<a href="#">Призы</a>
+								</li>
+								<li>
+									<a href="#">Правила</a>
+								</li>
+								<li>
+									<a href="register.html" target="register">Регистрация</a>
+								</li>
+								<li>
+									<a href="#">
+										Участники
+										<span class="participant-count members-count"></span>
+									</a>
+								</li>
+								<li>
+									<a href="#">Новости</a>
+								</li>
+								<li>
+									<a href="#">Победители</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+
+			<div class="placeholder">
+				<div class="banner-block registration row">
+					<div class="banner col-md-8 col-sm-12">
+						<div class="competition">
+							<h2>Разыгрываем приз каждую неделю! 15 недель!</h2>
+							<p>
+								Зарегистрируйтесь в конкурсе, получите билеты и ожидайте розыгрыша.
+								Все самое лучшее случается неожиданно!
+							</p>
+						</div>
+					</div>
+					<div class="btn-register-container col-md-4 col-sm-12">
+						<a class="btn-register" href="register.html" target="register">
+							РЕГИСТРАЦИЯ В КОНКУРСЕ
+							<img src="images/register-white.png" alt="Регистрация в конкурсе">
+						</a>
+					</div>	
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<div class="placeholder">
+				<div class="registration-block row">
+					<section class="col-md-8 col-sm-12">
+						<h1 class="registration-section-header">Регистрация в конкурсе</h1>
+						<form class="registration-form" method="POST" novalidate>
+							<div class="bank-group required-group">
+								<label for="fxBankLogin">Логин в FXBank</label>
+								<input type="text" class="form-control" id="fxBankLogin" name="fxBankLogin" placeholder="Логин в FXBank" required>
+								<div class="bank-tip-block">
+									<div class="dots">...........</div>
+									<div class="tip">
+										<p class="tip-title">
+											Нет торгового счета в УТС?
+										</p>
+										<p>Вы можете <a href="#">зарегистрировать</a> его прямо сейчас.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="required-group">
+								<label for="name">Имя</label>
+								<input type="text" class="form-control" id="name" name="name" placeholder="Имя" required>
+							</div>
+
+							<div class="required-group">
+								<label for="surname">Фамилия</label>
+								<input type="text" class="form-control" id="surname" name="surname" placeholder="Фамилия" required>
+							</div>
+
+							<div class="required-group">
+								<label for="email">Ваш E-mail</label>
+								<input type="email" class="form-control" id="email" name="email" placeholder="email@mail.ru" required>
+							</div>
+
+							<div class="required-group">
+								<label for="countryID">Страна</label>
+								<select class="form-control" id="countryID" name="countryID" required>
+									<option value="">Выберите страну</option>
+									<option value="1" selected>Россия</option>
+								</select>
+							</div>
+
+							<div class="required-group">
+								<label for="regionID">Регион</label>
+								<select class="form-control" id="regionID" name="regionID" required>
+									<option value="">Выберите регион</option>
+									<option value="1" selected>Москва</option>
+								</select>
+							</div>
+
+							<div class="phone-group required-group">
+								<label for="phone-country">Номер телефона</label>
+								<select class="form-control phone-country" id="phone-country" name="phone-country" required>
+									<option value="">Выберите код страны</option>
+									<option value="1" selected>+7</option>
+								</select>
+								<input type="tel" pattern="[0-9]{10}" class="form-control phone" id="phone" name="phone" placeholder="9139876543" required>
+							</div>
+							<div class="phone-tips-group">
+								<label></label>
+								<div class="phone-country">Страна</div>
+								<div class="phone">
+									<p>Номер телефона</p>
+									<p>Необходимо заполнить для активации сервиса "SMS уведомления"</p>
+								</div>
+							</div>
+
+							<div>
+								<label></label>
+								<img src="images/captcha.png" alt="Введите цифры">
+								<img src="images/refresh.png" alt="Получить новую картинку" class="icon-refresh">
+							</div>
+
+							<div class="captcha-input-group required-group">
+								<label for="captcha">Проверочный код:</label>
+								<input type="text" class="form-control" id="captcha" name="captcha" required>
+							</div>
+
+							<div>
+								<label></label>
+								<button type="submit" id="btn-register">Зарегистрироваться</button>
+							</div>
+						</form>
+					</section>
+
+					<div class="col-md-4 col-sm-12">
+						<section class="next-tour-prize">
+							<h2>Приз четвертого тура</h2>
+							<figure>
+								<p>
+									<img src="images/next-prize.png" alt="Приз четвертого тура - Телевизор!">
+								</p>
+								<figcaption>
+									Домашний кинотеатр Gnusmas
+								</figcaption>
+							</figure>
+							<div class="timer-block">
+								<p class="timer-title">До начала розыгрыша осталось:</p>
+								<div class="timer-control"></div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div class="placeholder">
+				<div class="tickets-count">
+					<h2>В розыгрыше уже <b class="members-count">4,570</b> <span class="members-count-word"></span></h2>
+				</div>
+
+				<div class="footer">
+					<div class="footer-logo footer-child">
+						<img src="images/fxclub-contest-logo.png" alt="ForexClub Logo">
+					</div>
+
+					<nav class="footer-nav footer-child">
+						<h6>Разделы конкурса</h6>
+						<ul>
+							<li>
+								<a href="#">Призы</a>
+							</li>
+							<li>
+								<a href="#">Правила</a>
+							</li>
+							<li>
+								<a href="register.html" target="register">Регистрация</a>
+							</li>
+							<li>
+								<a href="#">Участники</a>
+							</li>
+							<li>
+								<a href="#">Новости</a>
+							</li>
+							<li>
+								<a href="#">Победители</a>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="footer-prizes footer-child">
+						<h6>В следующих турах будут разыгрываться:</h6>
+						<ul>
+							<li>
+								<img src="images/tv.png" alt="Приз телевизор">
+								<a href="#">Телевизор КВН</a>
+							</li>
+							<li>
+								<img src="images/shovel.png" alt="Приз лопата">
+								<a href="#">Лопата</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="footer-social footer-child">
+						<h6>Сообщества:</h6>
+						<ul>
+							<li>
+								<a href="#" class="facebook-icon"></a>
+							</li>
+							<li>
+								<a href="#" class="vk-icon"></a>
+							</li>
+							<li>
+								<a href="#" class="google-plus-icon"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<!--[if lt IE 9]>
+		<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<![endif]-->
+		<!--[if (gte IE 9) | (!IE)]><!-->
+		<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+		<!--<![endif]-->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
+		<script src="bower_components/jquery-form/jquery.form.js"></script>
+		<script src="scripts/lib/polyfill.js"></script>
+		<script src="scripts/lib/cookies.min.js"></script>
+		<script src="scripts/lib/jquery-ui-timer.min.js"></script>
+		<script src="scripts/forex.min.js"></script>
+		<script src="scripts/register.js"></script>
+	</body>
+	</html>

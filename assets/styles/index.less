@@ -1,0 +1,128 @@
+
+// Steps block begin
+@stepsColor: #ff6700;
+
+.steps-header
+{
+    font-size: 24px;
+    font-weight: bold;
+
+    display: inline-block;
+
+    margin: 26px 120px 15px;
+
+    color: #333;
+}
+
+.steps
+{
+    position: relative;
+
+    padding: 20px 73px 20px 0;
+
+    border: 1px solid rgb(238, 222, 190);
+    border-radius: 4px;
+    background-color: #fcf8e3;
+
+    behavior: url(PIE.htc);
+
+    article
+    {
+        margin: 15px 0;
+    }
+
+    .step-num
+    {
+        font-size: 35px;
+        font-weight: bold;
+
+        display: table-cell;
+        float: left;
+
+        width: 58px;
+        height: 58px;
+        margin-right: 33px;
+        margin-left: 32px;
+
+        text-align: center;
+
+        color: @stepsColor;
+        border: 1px solid @stepsColor;
+        border-radius: 50%;
+    }
+}
+
+.step-descr
+{
+    display: table-cell;
+
+    h3
+    {
+        font-size: 20px;
+
+        margin-top: 0;
+        margin-bottom: 11px;
+
+        color: #333;
+    }
+
+    p
+    {
+        font-size: 14px;
+
+        color: #666;
+
+        a
+        {
+            color: #0091da;
+        }
+    }
+}
+// Steps block end
+
+
+// Info block begin
+.news
+{
+    position: relative;
+
+    margin: 30px 0;
+    padding-left: 15px;
+
+    border: 1px solid rgb(238, 222, 190);
+    border-radius: 4px;
+    background-color: #fcf8e3;
+
+    behavior: url(PIE.htc);
+
+    h3
+    {
+        font-size: 24px;
+        font-weight: bold;
+
+        margin: 16px -1px 24px;
+
+        color: #333;
+    }
+
+    article
+    {
+        font-size: 14px;
+
+        display: list-item;
+
+        margin: 0 15px 26px 17px;
+
+        color: #08d;
+    }
+
+    .info-date
+    {
+        font-size: 11px;
+
+        margin-top: 10px;
+
+        color: #666;
+    }
+}
+// Info block end
